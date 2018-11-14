@@ -1,0 +1,126 @@
+.main, .Pg1, .ContactList, .Pg3, header, footer, .add h2, .add form .btn, .main > div {
+  margin: 0 auto; }
+
+* {
+  border: 0;
+  margin: 0;
+  outline: 0;
+  padding: 0; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  color: #000;
+  font-family: "Lato", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  position: relative; }
+
+a {
+  color: #FFF;
+  font-weight: bold;
+  text-decoration: none; }
+
+a:last-child {
+  margin-right: 0; }
+
+a:visited {
+  color: #FFF; }
+
+/* TYPOGRAPHY ================================== */
+h1, h2 {
+  font-weight: bold;
+  text-transform: capitalize; }
+
+p {
+  font-size: .8em; }
+
+ul {
+  list-style: none; }
+
+.main, .Pg1, .ContactList, .Pg3 {
+  background: #D0D2D3;
+  height: 500px;
+  padding: 3%;
+  top: 0;
+  width: 1000px; }
+
+/* HEADER ================================== */
+header, footer {
+  background: #088AC4;
+  height: 60px;
+  padding: 10px 10px 0;
+  width: 1093px; }
+
+header h1 {
+  color: #FFF;
+  float: left;
+  font-size: 2em; }
+
+header .Nav {
+  float: right;
+  padding-top: 10px; }
+  header .Nav ul {
+    display: flex;
+    flex-direction: row; }
+    header .Nav ul li {
+      margin-right: 20px; }
+    header .Nav ul li:hover {
+      color: #2B2B2B;
+      text-decoration: underline; }
+
+.add {
+  padding-bottom: 20px; }
+  .add h2 {
+    text-align: center; }
+  .add form {
+    border-radius: 15px;
+    display: flex;
+    flex-direction: row;
+    margin-top: 6%;
+    padding: 1%; }
+    .add form input {
+      height: 15px;
+      margin-bottom: 15px;
+      margin-right: 20px;
+      padding: 10px 1%; }
+      .add form input:focus {
+        border: solid 1px #FF7F50; }
+    .add form p {
+      font-size: 1em;
+      margin-bottom: 15px; }
+    .add form .btn {
+      background: #FF7F50;
+      bottom: 30px;
+      color: #FFF;
+      cursor: pointer;
+      padding: 10px 0;
+      width: 100px; }
+
+.main > h2:nth-child(1) {
+  margin: 0 auto 30px;
+  text-align: center; }
+
+.currExp {
+  background: #FFF;
+  padding: 10px;
+  width: 100%; }
+  .currExp h2 {
+    margin-bottom: 10px; }
+  .currExp article ul {
+    margin-bottom: 10px; }
+    .currExp article ul li {
+      margin-bottom: 10px; }
+      .currExp article ul li span {
+        margin-right: 10px; }
+
+footer {
+  text-align: center; }
+  footer a {
+    margin-right: 250px; }
+    footer a:last-child {
+      margin-right: 0; }
+    footer a svg {
+      height: 30px;
+      width: 30px; }

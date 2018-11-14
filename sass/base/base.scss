@@ -1,0 +1,203 @@
+*{
+  border: 0;
+  margin: 0;
+  outline: 0;
+  padding: 0;
+}
+
+html{
+	font-size: 62.5%;
+}
+
+body{
+	color: $colorBlack;
+  font-family: $fontFamily;
+  font-size: $fontSize;
+  font-weight: $fontWeight;
+	position: relative;
+}
+
+a{
+  color: $colorWhite;
+  font-weight: $fontWeightBold;
+  text-decoration: none;
+}
+
+a:last-child{
+  margin-right: 0;
+}
+
+a:visited{
+  color: $colorWhite;
+}
+
+
+
+/* TYPOGRAPHY ================================== */
+h1, h2{
+  font-weight: $fontWeightBold;
+	text-transform: capitalize;
+}
+
+p{
+  font-size: .8em;
+}
+
+ul{
+  list-style: none;
+}
+
+.main, .Pg1, .ContactList, .Pg3{
+  background: $colorGray;
+  height: 500px;
+  @extend %center-element;
+  padding: 3%;
+  top: 0;
+  width: 1000px;
+}
+
+
+
+/* HEADER ================================== */
+header, footer{
+  background: $colorBlue;
+  height: 60px;
+  @extend %center-element;
+  padding: 10px 10px 0;
+  width: 1093px;
+}
+
+header{
+  h1{
+    color: $colorWhite;
+    float: left;
+    font-size: 2em;
+  }
+
+  .Nav{
+    float: right;
+    padding-top: 10px;
+
+    ul{
+      display: flex;
+      flex-direction: row;
+
+      li{
+        margin-right: 20px;
+      }
+
+      li:hover{
+        color: $colorCharcoal;
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+
+.add{
+  padding-bottom: 20px;
+
+  h2{
+    @extend %center-element;
+    text-align: center;
+  }
+
+  form{
+    border-radius: 15px;
+    display: flex;
+    flex-direction: row;
+    margin-top: 6%;
+    padding: 1%;
+
+    input{
+      height: 15px;
+      margin-bottom: 15px;
+      margin-right: 20px;
+      padding: 10px 1%;
+
+      &:focus{
+        border: solid 1px $colorOrange;
+      }
+    }
+
+    p{
+      font-size: 1em;
+      margin-bottom: 15px;
+    }
+
+    .btn{
+      background: $colorOrange;
+      bottom: 30px;
+      @extend %center-element;
+      color: $colorWhite;
+      cursor: pointer;
+      padding: 10px 0;
+      width: 100px;
+    }
+  }
+}
+
+
+
+.main{
+  > h2:nth-child(1){
+    margin: 0 auto 30px;
+    text-align: center;
+  }
+
+  > div{
+    @extend %center-element;
+  }
+}
+
+
+
+Chart{
+
+}
+
+
+
+.currExp{
+  background: $colorWhite;
+  padding: 10px;
+  width: 100%;
+
+  h2{
+    margin-bottom: 10px
+  }
+
+  article{
+    ul{
+      margin-bottom: 10px;
+
+      li{
+        margin-bottom: 10px;
+
+        span{
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+}
+
+
+
+footer{
+  text-align: center;
+
+  a{
+    margin-right: 250px;
+
+    &:last-child{
+      margin-right: 0;
+    }
+
+    svg{
+      height: 30px;
+      width: 30px;
+    }
+  }
+}
