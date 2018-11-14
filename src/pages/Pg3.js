@@ -15,7 +15,15 @@ class Pg3 extends Component {
 
   focusInput = React.createRef();
 
+  componentDidMount = ()=> {
+    let exList = this.state.exList;
 
+    this.focusInput.current.focus();
+
+    if(JSON.parse(localStorage.getItem(exList))){
+      this.setState({exList: exList});
+    }
+  }
 
   componentWillUpdate = (nextProps, nextState)=> {
     let exList = this.state.exList;
@@ -75,20 +83,6 @@ class Pg3 extends Component {
     this.state.exList.push({"expense": this.state.expense, "amount": this.state.amount});
     this.setState({exList});
     e.target.reset();
-  }
-
-  componentDidMount = (e)=> {
-    let exList = this.state.exList;
-
-    this.focusInput.current.focus();
-
-    let exListItem = localStorage.getItem(exList);
-
-    if(exListItem){
-      this.state.exList.push({"expense": this.state.expense, "amount": this.state.amount});
-      this.setState({exListItem});
-      e.target.reset();
-    }
   }
 
   removeExpense = key => {

@@ -23,15 +23,11 @@ class Pg2 extends Component {
 
   componentDidMount = ()=> {
     let exList = this.state.exList;
-    let expField = document.querySelector("#expField").value;
-    let amtField = document.querySelector("#amtField").value;
 
     this.focusInput.current.focus();
 
-    if(JSON.parse(localStorage.getItem(exList)) && JSON.parse(localStorage.getItem(expField)) && JSON.parse(localStorage.getItem(amtField))){
+    if(JSON.parse(localStorage.getItem(exList))){
       this.setState({exList: exList});
-      this.setState({expField: expField});
-      this.setState({amtField: amtField});
     }
   }
 
