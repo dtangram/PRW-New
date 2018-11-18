@@ -25,7 +25,7 @@ class Pg3 extends Component {
     }
   }
 
-  componentWillUpdate = (nextProps, nextState)=> {
+  componentWillUpdate = ()=> {
     let exList = this.state.exList;
     localStorage.setItem("exList", JSON.stringify(exList));
   }
